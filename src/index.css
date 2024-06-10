@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'IBM Plex Sans';
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-image: url(./images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(232, 221, 221);
+    padding: 5rem;
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+
+        .top-left {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            
+            .location {
+                font-size: 3rem;
+            }
+
+            .line-break {
+                border: 1px solid white;
+            }
+
+            .temperature {
+                font-size: 4rem;
+                font-weight: bold;
+            }
+
+            .cloud-info {
+                font-size: 1.5rem;
+            }
+
+            .weather-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        form {
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: center;
+            
+
+            #search {
+                background: transparent;
+                border: none;
+                font-size: 1.5rem;
+                color: rgb(232, 221, 221);
+                padding: .3rem .1rem;
+                width: 400px;
+            }
+
+            #search:focus {
+                outline: none;
+            }
+
+            #search::placeholder {
+                color: rgb(232, 221, 221);;
+            }
+
+            .search-img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .set-default {
+            background: transparent;
+            padding: .5rem 1rem;
+            color: rgb(232, 221, 221);
+            border: 1px solid rgb(232, 221, 221);
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .set-default:hover {
+            background-color: rgb(232, 221, 221);
+            color: black;
+            transition: .3s;
+        }
+    }
+
+    .top-right {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        li {
+            display: flex;
+            gap: .8rem;
+            align-items: center;
+
+            .top-right-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .top-right-container {
+                
+                h4 {
+                    font-weight: 500;
+                    font-size: 1rem;
+                }
+
+                p {
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    z-index: -1;
+}
