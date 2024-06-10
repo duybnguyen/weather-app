@@ -1,1 +1,65 @@
-<head><script defer src="bundle.js"></script></head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+<script defer src="bundle.js"></script></head>
+<body>
+    <main class="top">
+        <section class="top-left">
+            <h1 class="cloud-info"></h1>
+            <p class="location"></p>
+            <p class="date"></p>
+            <p class="time"></p>
+            <p class="temperature"></p>
+            <img src="" alt="weather image" class="weather-img">
+        </section>
+
+        <div class="search-container">
+            <form action="">
+                <input type="text" placeholder="Search location" id="search" name="search">
+                <img src="" alt="search-icon" class="search-icon">
+            </form>
+            <button class="set-default">Set Default Country</button>
+        </div>
+        
+        <ul class="top-right">
+            <li>    
+                <img src="" alt="thermometer icon" class="top-right-icon">
+                <div class="top-right-container">
+                    <h4>Feels Like</h4>
+                    <p class="feels-like"></p>
+                </div>
+            </li>
+            <li>    
+                <img src="" alt="humidity-icon" class="top-right-icon" class="humidity-icon">
+                <div class="top-right-container">
+                    <h4>Humidity</h4>
+                    <p class="humidity"></p>
+                </div>
+            </li>
+            <li>    
+                <img src="" alt="rain icon" class="top-right-icon">
+                <div class="top-right-container">
+                    <h4>Chance of Rain</h4>
+                    <p class="rain-chance"></p>
+                </div>
+            </li>
+            <li>    
+                <img src="" alt="wind icon" class="top-right-icon">
+                <div class="top-right-container">
+                    <h4>Wind Speed</h4>
+                    <p class="wind-speed"></p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <ul class="future-forecasts">
+        
+    </ul>
+
+</body>
+</html>
