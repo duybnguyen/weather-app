@@ -1,6 +1,7 @@
 import '../index.css'
 import updateTime from './updateTime';
 import updateCloud from './updateCloud'
+import displayForecasts from './displayForecasts';
 
 const displayWeather = (weatherData) => {
     const {location: loc, current: weather, forecast} = weatherData
@@ -42,7 +43,7 @@ const displayWeather = (weatherData) => {
     const wind = document.querySelector('.wind-speed')
     wind.textContent = `${forecastDay.maxwind_mph} mph`
 
-
+    displayForecasts(forecast.forecastday)
 }
 
 export default displayWeather
