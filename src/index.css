@@ -60,6 +60,7 @@ body {
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+        position: relative;
 
         form {
             border-bottom: 1px solid white;
@@ -120,6 +121,61 @@ body {
             background-color: rgb(232, 221, 221);
             color: black;
             transition: .3s;
+        }
+
+        dialog {
+            position: fixed;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            gap: 1rem;
+            padding: 1rem;
+            background: transparent;
+            border-radius: .5rem;
+            border: 2px solid rgb(232, 221, 221);
+
+            input {
+                width: 400px;
+                font-size: 1.1rem;
+                border: none;
+                border-bottom: 2px solid rgb(232, 221, 221);
+                background-color: transparent;
+                padding: .2rem;
+                color: rgb(232, 221, 221);;
+                margin-bottom: 1rem;
+            }
+            input::placeholder {
+                color: rgb(232, 221, 221);
+            }
+
+            input:focus {
+                outline: none;
+            }
+
+            .btn-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+                
+                button {
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    border: 1px solid rgb(232, 221, 221);;
+                    padding: .5rem 1rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: white
+
+                }
+
+                button:hover {
+                    background-color: rgb(232, 221, 221);
+                    color: black;
+                    transition: .3s;
+                }
+            }
         }
     }
 
